@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    tools:context=".MainActivity"
+    android:layout_height="match_parent">
+
+    <com.jawnnypoo.physicslayout.PhysicsRelativeLayout
+        android:id="@+id/physics_layout"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        app:bounds="true"
+        app:boundsSize="20dp"
+        app:gravityX="9"
+        app:gravityY="9"
+        app:physics="true"
+        >
+
+        <com.avrioenergy.avriodemo.BubbleChart
+            android:id="@+id/bubbleChart1"
+            android:layout_width="144dp"
+            android:layout_height="140dp"
+            />
+        <com.avrioenergy.avriodemo.BubbleChart
+            android:id="@+id/bubbleChart2"
+            android:layout_width="144dp"
+            android:layout_height="144dp"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="0dp"
+            />
+
+        <com.avrioenergy.avriodemo.BubbleChart
+            android:id="@+id/bubbleChart3"
+            android:layout_width="144dp"
+            android:layout_height="144dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="0dp"
+            />
+
+        <com.avrioenergy.avriodemo.BubbleChart
+            android:id="@+id/bubbleChart4"
+            android:layout_width="144dp"
+            android:layout_height="144dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="0dp"
+            />
+        <com.avrioenergy.avriodemo.BubbleChart
+            android:id="@+id/bubbleChart5"
+            android:layout_width="144dp"
+            android:layout_height="144dp"
+            android:layout_toEndOf="@+id/bubbleChart4"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="0dp"
+            />
+        <com.avrioenergy.avriodemo.BubbleChart
+            android:id="@+id/bubbleChart6"
+            android:layout_width="144dp"
+            android:layout_height="144dp"
+            android:layout_toEndOf="@+id/bubbleChart1"
+            android:layout_margin="0dp"
+            />
+    </com.jawnnypoo.physicslayout.PhysicsRelativeLayout>
+</LinearLayout>

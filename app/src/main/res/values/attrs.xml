@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="BubbleChart"> <!-- specify our custom view name -->
+        <attr name="bubbleColor" format="integer" />
+        <attr name="bubbleSize" format="integer" />
+        <attr name="bubbleTextColor" format="integer" />
+        <attr name="bubbleText" format="string" />
+    </declare-styleable>
+</resources>
